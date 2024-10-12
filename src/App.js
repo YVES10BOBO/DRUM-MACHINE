@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import DrumMachine from "./components/DrumMachine"; // Import the main DrumMachine component
+import './App.css';  // Import global CSS (if any)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DrumMachine /> {/* Render the DrumMachine component */}
     </div>
   );
 }
