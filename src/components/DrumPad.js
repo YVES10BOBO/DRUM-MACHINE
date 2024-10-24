@@ -26,6 +26,7 @@ const DrumPad = ({ pad, updateDisplay }) => {
     return () => {
       document.removeEventListener("keydown", handleKeyPress);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
